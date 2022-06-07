@@ -1,0 +1,161 @@
+O que é a internet
+
+    Introdução ao tema 
+
+        Histórico com ARPANET.
+    
+    Termos-chave:
+
+        cache: Partes do site salvas no computador para facilitar o acesso depois
+        crack: Piratiar
+        cookies: AÇÕES DO USUARIO QUE SÃO guardadas pelo site
+        etc...
+
+    A internet atualmente:
+
+        Uso maior para aplicativos de conversas e diversão
+        Pandemia afetou o uso, aumentando o tráfego
+
+    Como funciona a internet
+
+        Backbone: Gerenciam o tráfego da Internet. Empresas pega tráfego do backbon e enviam ao usuário
+        Caminho inverso: www, DNS, IP, Classe de redes.
+
+        TCP/IP, portas, roteadores, swiyches e modems:
+
+            TCP = Protocolo de controle de transmissão
+            IP = Internet Protocol 
+
+            4 Camadas:
+                1. Física: placa de rede
+                2. Rede: Tem que estar conectado em alguma rede (Ex: IP)
+                3. Transporte: Deve ter uma forma de transporte definida (ex: TCP, UDP)
+                4. Aplicação: Tipo da aplicação que envia os dados (Ex: SMP HTTP etc)
+
+            UDP: Rápido, não confiável, carro do ovo, livestream
+
+            TCP: Voltado a conexão, handshake, integridade, ordem dos dados, aplicativo de mensagens de texto
+
+        Port:
+
+            Porto, não porta
+            Para receber e transmitir se usam os mesmos portos/portas
+        
+        Modems:
+
+            Modula e demodula sinais - Converte dados
+
+        Roteador:
+
+            Distrbui a internet para um ou mais dispositivos de uma rede
+
+        Switch: 
+
+            Distribui internet para o computador que solicitou a informação.
+
+    Celular, internet e outros dispositivos:
+
+        O sms vai de carona na comunicação da torre com o Celular
+
+        MMS: Audio, vídeo, uma largura maior do que o sms
+
+        1G (analógico): 10kbps
+        2G (digital)(GSM): 97 kbps
+        2.5G (GPRS): 32-80 kbps - dados + voz
+        2.75G (EDGE): 128-236 kbps 
+        3G: 7 mbps
+        4G: 22,1 mbps
+        5G: 10 Gbps
+
+    Wi-Fi 
+
+        IEE de 2,4Ghz e 2Mbps ao IEE 802.11n: 2,4Gz ou 5Ghz
+
+        Segurança: 
+
+            WEP: chave de 64 bits e de 128 bits
+            WPA: chaves trocadas periodicamente
+            WPA2: +segurança +processamento
+
+        Dispositivos:
+
+            Dispositivos conectados em casa, TV, Geladeira, Alexa, etc.
+    
+    Bluetooth:
+
+        3 classes
+        5 versões de 1mbps a 50mbps
+
+    Browser, navegadores, aplicativos e webserver
+
+        Browser: Interpreta a linguagem de programação para mostrar ao usuário
+
+        Página Estática: Pouca ou nenhuma interação
+
+        Página Dinâmica: Partes independentes que interagem com o usuário
+
+        Site:
+
+            Atende vários propósitos
+
+        Aplicativo:
+
+            Software que é executado no navegadores
+
+        Web server:
+
+            Ondem ficam guardados os arquivos servidor. 
+
+            web-service:
+
+                Interface disponível para fazer requisições e consultas em banco de dados inacessíveis
+
+    
+    Stacks:
+
+        Pilhas de tecnologia, conjunto de LPs, ambientes e Softwares suficientes para a empresa 
+
+        Os devs precisam saber da limitação e capacidade das ferramentas
+
+        Precisa estar alinhada a estratégia do negócio, maturidade da empresa
+
+        Dois stacks principais:
+
+            FRONT-END:
+
+                Parte da frente, interface com usuário UI/UX
+
+            BACK-END:
+
+                Parte de trás, servidores, banco de dados, regras de negócio etc
+
+            FULLSTACK:
+
+                Sabe trabalhar em todas as camadas da empresa
+
+    LP e termos:
+
+        HTML, CSS, JavaScript, PHP, .NET, ASP, Java, Ruby, Python, Perl, C#
+
+        404: Erro páigna não existe
+        ALT: 
+        API: Funcionalidade extra para o site executar uma função específica
+        Breakpoints: Pontos base ou pontos de parada
+        DPI: Resolução pontos na tela
+        Favicon: figurinha que representa o site
+        FTP: Protocolo de comunicação
+        MVC: Arquitetura que separa em três partes 
+        SSL: Protocolo de segurança
+        WYSIWYG: What You See Is What You Get
+
+
+
+
+    
+
+
+        
+    
+    
+
+
