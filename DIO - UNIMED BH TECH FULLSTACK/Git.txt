@@ -37,3 +37,5 @@ TOKEN DE ACESSO PESSOAL
 
     Gerar o token no github e substui pela senha
 
+Mudanças para testar o versionamento via GIT BASH
+
