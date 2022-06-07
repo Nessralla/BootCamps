@@ -39,3 +39,18 @@ TOKEN DE ACESSO PESSOAL
 
 Mudanças para testar o versionamento via GIT BASH
 
+Ciclo de vida dos arquivos
+
+    Untracked = adicionar o arquivo
+
+    Unmodified = Não modificado ainda, tem o mesmo shar1
+
+    Modified = Editado 
+
+    Staged = Arquivo já editado, aguardando o Commit 
+
+    Aconte o ciclo entre os 3 estágios Unmodified, Modified e Staged. 
+
+Testar novamente fazer o versionamento via GIT BASH
+
+Versao diferente
