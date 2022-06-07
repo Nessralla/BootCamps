@@ -1,0 +1,39 @@
+3 Objetos do HIT
+
+BLOBS = 
+
+    echo 'conteudo' | git hash-object --stdin
+    > sahdf834ihqw87f1jnf7hwfiq087hr...
+
+    echo -e 'conteudo' | openssl sha1 
+    > asdh817iahus8d71873iuahsd78y18...
+
+    A chave é diferente pois o git salva como objeto BLOB
+
+    echo 'conteudo' | git hash-object --stdin
+    > sahdf834ihqw87f1jnf7hwfiq087hr...
+
+    echo -e 'blob 9\0conteudo' | openssl sha1 
+    > sahdf834ihqw87f1jnf7hwfiq087hr...
+
+    É a mesma chave pois passamos os metadados do objeto também
+
+
+
+TREES = 
+
+    As TREES armazenam BLOBS e outras TREES, montando a estrutura dos arquivos.
+
+COMMITS = 
+
+    É o objeto que junta tudo, apontando para uma TREE, para um parente, autor, mensagem e timestamp
+
+
+CHAVE SSH
+
+    Chave que fica na máquina para verificação e autenticação.
+
+TOKEN DE ACESSO PESSOAL
+
+    Gerar o token no github e substui pela senha
+
