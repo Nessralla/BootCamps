@@ -1,0 +1,44 @@
+Introdução A Programação e Pensamento Computacional
+    
+    Pensamento Computacional   
+        4 Pilares: Decomposição, Reconhecimento Padrões, Abstração, Design Algoritmo
+        Complemento: Refinamento > Raciocínio Lógico
+    
+    Decomposição
+        Dividir o problema em partes menores e depois recompor
+
+    Padrões
+        Reconhecer similaridades e diferenças
+
+    Abstração
+        Isolar o objeto da realidade, pegar suas características e generalizar
+
+    Algoritmos
+        Step-by-Step
+
+Técnicas de lógica de Programação
+    
+    Técnica linear = usada em problemas de uma dimensão
+    Técnica Estrutural = organização dos elementos
+    Técnica Modular = divide o processo em módulos
+
+Fundamentos de Algoritmos
+
+    Tipologia e variáveis
+        Numéricos, caracteres e lógicos
+        variáveis
+    
+    Instruções Primitivas
+        Operadores
+    
+    Estruturas Condicionais e Operadores   
+        Verifica/Executa Ação 
+    
+    Estrutura de Repetição
+        Laços, loops, verificação parada
+
+    Vetores e Matrizes
+        Vetor: matriz de uma dimensão
+    
+    Funções
+        Subrotinas: Fazem tarefas específicas
