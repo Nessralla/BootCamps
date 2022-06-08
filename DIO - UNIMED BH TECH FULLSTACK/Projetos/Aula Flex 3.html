@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fundamentos Flex-wrap</title>
+
+        <style>
+            .flex_container {
+                display: flex;
+                height: 150px;
+                border: 2px solid   black;
+                max-width: 300px;
+                flex-direction: row; 
+            }
+
+            .item {
+                font-size: 24px;
+                height: 50%;
+                text-align: center;
+                min-width: 100px;
+                line-height: 50px;
+            }
+        
+            .nowrap {
+                flex-wrap: nowrap;
+            }
+
+            .blue {
+                background-color: blue;
+            }
+        
+            .green {
+                background-color: green;
+            }
+
+            .orange {
+                background-color: orange;
+            }
+
+            .wrap {
+                flex-wrap: wrap;
+            }
+
+            .wrap_reverse {
+                flex-wrap: wrap-reverse;
+            }
+
+            .purple {
+                background-color: purple;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <h1>no wrap</h1>
+        <div class="flex_container nowrap">
+            <div class="item blue"> 1 </div>
+            <div class="item green"> 2 </div>
+            <div class="item orange"> 3 </div>
+            <div class="item purple"> 4 </div>
+
+        </div>
+        
+        <h1> wrap</h1>
+        <div class="flex_container wrap">
+            <div class="item blue"> 1 </div>
+            <div class="item green"> 2 </div>
+            <div class="item orange"> 3 </div>
+            <div class="item purple"> 4 </div>
+
+        </div>
+
+        <h1> wrap-reverse</h1>
+        <div class="flex_container wrap_reverse">
+            <div class="item blue"> 1 </div>
+            <div class="item green"> 2 </div>
+            <div class="item orange"> 3 </div>
+            <div class="item purple"> 4 </div>
+
+        </div>
+
+
+
+    </body>
+</html>
+
+<!-- Podemos modificar as propriedades flex-direction -->
+}

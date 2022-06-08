@@ -1,0 +1,57 @@
+<!-- Align items
+
+Alinhamento dos flex iten de acordo com o eixo do container. O alinhamento é diferente para quando os itens
+estão em colunas ou linhas. Permite o alinhamento central no eixo vertical -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item {
+            background-color: chartreuse;
+            margin: 5px;
+            color: chocolate;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .strech{
+            align-items: stretch;
+        }
+
+    </style>
+</head>
+<body>
+    <h3> Center </h3>
+    <section class="container center">
+        <div class="item">Alexandre</div>
+        <div class="item">É muito</div>
+        <div class="item">Legal e</div>
+        <div class="item">Divertido e inteligente</div>
+        <div class="item">meu amigo</div>
+    </section>
+
+    <h3> Strech </h3>
+    <section class="container center strech">
+        <div class="item">Alexandre</div>
+        <div class="item">É muito</div>
+        <div class="item">Legal e</div>
+        <div class="item">Divertido e inteligente</div>
+        <div class="item">meu amigo</div>
+    </section>
+</body>
+</html>

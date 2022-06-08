@@ -1,0 +1,120 @@
+<!-- Flex Flow: uso incomum, é um atalho para as propeidades flex-direction e flex-wrap-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .flex_container {
+            display: flex;
+            border: 1px solid black;
+            max-width: 500px;
+            margin-bottom: 10px;
+        }
+
+        .default {
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            background-color: rgb(104, 9, 25);
+            margin: 5px;
+            color: white;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .wrap {
+            flex-flow: row wrap;
+        }
+
+        .reverse {
+            flex-flow: row wrap-reverse;
+        }
+
+        .row_reverse {
+            flex-flow: row-reverse nowrap;
+        }
+
+        .rwrap {
+            flex-flow: row-reverse wrap;
+        }
+
+        .rr {
+            flex-flow: row-reverse wrap-reverse;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1> Default: row nowrap</h1>
+    <div class="flex_container default">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <br>
+    <h1> Default: row wrap</h1>
+    <div class="flex_container wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <br>
+    <h1> Default: reverse</h1>
+    <div class="flex_container reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <br>
+    <h1> Default: row-reverse nowrap</h1>
+    <div class="flex_container row_reverse nowrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <br>
+    <h1> Default: row-reverse wrap</h1>
+    <div class="flex_container rwrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <br>
+    <h1> Default: row-reverse wrap-reverse</h1>
+    <div class="flex_container rr">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
+
+<!-- Justify Content 
+
+Essa propriedade vai alinhar os itens dentro do container de acordo com a direção pretendida e tratar da 
+distribuição de espaçamento entre eles-->
