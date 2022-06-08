@@ -11,6 +11,9 @@ estão em colunas ou linhas. Permite o alinhamento central no eixo vertical -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos - align items</title>
     <style>
+        .body {
+            background-color: white;
+        }
         .container{
             max-width: 350px;
             border: 1px solid black;
@@ -33,9 +36,37 @@ estão em colunas ou linhas. Permite o alinhamento central no eixo vertical -->
             align-items: stretch;
         }
 
+        .start {
+            align-items: flex-start;
+        }
+
+        .end {
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .collum {
+            flex-direction: column;
+        }
+
+        .central {
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .central .item {
+            flex: 0;
+            padding: 20px;
+        }
+
     </style>
 </head>
-<body>
+<body class="body">
+    <h1>ROWs</h1>
     <h3> Center </h3>
     <section class="container center">
         <div class="item">Alexandre</div>
@@ -46,12 +77,98 @@ estão em colunas ou linhas. Permite o alinhamento central no eixo vertical -->
     </section>
 
     <h3> Strech </h3>
-    <section class="container center strech">
+    <section class="container strech">
         <div class="item">Alexandre</div>
         <div class="item">É muito</div>
         <div class="item">Legal e</div>
         <div class="item">Divertido e inteligente</div>
         <div class="item">meu amigo</div>
+    </section>
+
+    <h3> Flex-start </h3>
+    <section class="container start">
+        <div class="item">Alexandre</div>
+        <div class="item">É muito</div>
+        <div class="item">Legal e</div>
+        <div class="item">Divertido e inteligente</div>
+        <div class="item">meu amigo</div>
+    </section>
+
+    
+    <h3> Flex-end </h3>
+    <section class="container end">
+        <div class="item">Alexandre</div>
+        <div class="item">É muito</div>
+        <div class="item">Legal e</div>
+        <div class="item">Divertido e inteligente</div>
+        <div class="item">meu amigo</div>
+    </section>
+
+    <h3> baseline</h3>
+    <section class="container baseline">
+        <div class="item"><br>Alexandre</div>
+        <div class="item">É muito</div>
+        <div class="item">Legal e</div>
+        <div class="item">Divertido e inteligente</div>
+        <div class="item">meu amigo</div>
+    </section>
+    <br>
+
+    <hr>
+    <h1>Collum</h1>
+
+    <h3> Flex-start </h3>
+    <section class="container start collum">
+        <div class="item">Alexandre</div>
+        <div class="item">É muito</div>
+        <div class="item">Legal e</div>
+        <div class="item">Divertido e inteligente</div>
+        <div class="item">meu amigo</div>
+    </section>
+
+    
+    <h3> Flex-end </h3>
+    <section class="container end collum">
+        <div class="item">Alexandre</div>
+        <div class="item">É muito</div>
+        <div class="item">Legal e</div>
+        <div class="item">Divertido e inteligente</div>
+        <div class="item">meu amigo</div>
+    </section>
+
+    <h3> Center </h3>
+    <section class="container center collum">
+        <div class="item">Alexandre</div>
+        <div class="item">É muito</div>
+        <div class="item">Legal e</div>
+        <div class="item">Divertido e inteligente</div>
+        <div class="item">meu amigo</div>
+    </section>
+
+    <h3> Strech </h3>
+    <section class="container strech collum">
+        <div class="item">Alexandre</div>
+        <div class="item">É muito</div>
+        <div class="item">Legal e</div>
+        <div class="item">Divertido e inteligente</div>
+        <div class="item">meu amigo</div>
+    </section>
+
+    <h3> baseline</h3>
+    <section class="container baseline collum">
+        <div class="item"><br>Alexandre</div>
+        <div class="item">É muito</div>
+        <div class="item">Legal e</div>
+        <div class="item">Divertido e inteligente</div>
+        <div class="item">meu amigo</div>
+    </section>
+
+
+    <h3>Alinhamento central a tela</h3>
+    <section class="container central center">
+        <div class="item"> Texto aleatório que não tem nenhum significado. Usado
+            para preencher documentos heheheheheh
+        </div>
     </section>
 </body>
 </html>

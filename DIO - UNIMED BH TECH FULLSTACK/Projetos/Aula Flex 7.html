@@ -1,0 +1,135 @@
+<!-- Align Content
+
+Trata o alinhamento das linhas do container no eixo vertical
+Precisa utilizar quebra de linhas
+A altura do container tem que ser maior do que a soma das linhas dos itens-->
+
+<!-- Tipos:
+        Center: ao centro
+        Strech: maior elemento de referencia
+        Start: alinhamento ao inicio
+        End: alinhamento ao final
+        Between: igual entre os elementos
+        Around: os espaçamentos do meio são duas vezes maiores do que o inicial e final
+    -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fundamentos FlexBox - Align Content</title>
+
+        <style>
+            .container {
+                height:400px;
+                max-width: 300px;
+                margin: 0; 
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid black;
+            }
+
+            .item {
+                background-color: orange;
+                margin: 5px;
+                padding: 0 5px;
+                flex: 1;
+                text-align: center;
+                color: white;
+            }
+
+            .strech {
+                align-content: stretch;
+            }
+
+            .center {
+                align-content: center;
+            }
+
+            .start {
+                align-content: flex-start;
+            }
+
+            .end {
+                align-content: flex-end;
+            }
+
+            .around {
+                align-content: space-around;
+            }
+
+            .between {
+                align-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+        <p>strech</p>
+        <div class="container strech">
+            <div class="item">Meu nome é Alexandre</div>
+            <div class="item">Tenho 31 anos e gosto de programar</div>
+            <div class="item">Minha esposa chama Ludmila</div>
+            <div class="item">Minha filha tem 1 ano chama Cecilia</div>
+            <div class="item">Gosto de jogar</div>
+            <div class="item">Sou professor e também administrador</div>
+            <div class="item">Agora vamos fazer nosso código</div>
+        </div>
+
+        <p>center</p>
+        <div class="container center">
+            <div class="item">Meu nome é Alexandre</div>
+            <div class="item">Tenho 31 anos e gosto de programar</div>
+            <div class="item">Minha esposa chama Ludmila</div>
+            <div class="item">Minha filha tem 1 ano chama Cecilia</div>
+            <div class="item">Gosto de jogar</div>
+            <div class="item">Sou professor e também administrador</div>
+            <div class="item">Agora vamos fazer nosso código</div>
+        </div>
+
+        <p>flex-start</p>
+        <div class="container start">
+            <div class="item">Meu nome é Alexandre</div>
+            <div class="item">Tenho 31 anos e gosto de programar</div>
+            <div class="item">Minha esposa chama Ludmila</div>
+            <div class="item">Minha filha tem 1 ano chama Cecilia</div>
+            <div class="item">Gosto de jogar</div>
+            <div class="item">Sou professor e também administrador</div>
+            <div class="item">Agora vamos fazer nosso código</div>
+        </div>
+
+        <p>flex-end</p>
+        <div class="container end">
+            <div class="item">Meu nome é Alexandre</div>
+            <div class="item">Tenho 31 anos e gosto de programar</div>
+            <div class="item">Minha esposa chama Ludmila</div>
+            <div class="item">Minha filha tem 1 ano chama Cecilia</div>
+            <div class="item">Gosto de jogar</div>
+            <div class="item">Sou professor e também administrador</div>
+            <div class="item">Agora vamos fazer nosso código</div>
+        </div>
+
+        <p>around</p>
+        <div class="container around">
+            <div class="item">Meu nome é Alexandre</div>
+            <div class="item">Tenho 31 anos e gosto de programar</div>
+            <div class="item">Minha esposa chama Ludmila</div>
+            <div class="item">Minha filha tem 1 ano chama Cecilia</div>
+            <div class="item">Gosto de jogar</div>
+            <div class="item">Sou professor e também administrador</div>
+            <div class="item">Agora vamos fazer nosso código</div>
+        </div>
+
+        <p>between</p>
+        <div class="container between">
+            <div class="item">Meu nome é Alexandre</div>
+            <div class="item">Tenho 31 anos e gosto de programar</div>
+            <div class="item">Minha esposa chama Ludmila</div>
+            <div class="item">Minha filha tem 1 ano chama Cecilia</div>
+            <div class="item">Gosto de jogar</div>
+            <div class="item">Sou professor e também administrador</div>
+            <div class="item">Agora vamos fazer nosso código</div>
+        </div>
+    </body>
+    </html>
