@@ -1,0 +1,115 @@
+<!-- Propriedade Align self
+    Estabelece o alinhamento individualmente sobre um determinado item
+    O container não pode ter o align-items definido
+        auto: valor padrão, respeita o align-items
+        flex-start: inicio do container
+        flex-end: ao final do contaienr
+        center: centro de acordo com eixo do container
+        strech: ocupa todos os espaços
+        baseline: linha base da tipografia
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fUNDAMENTOS - align self</title>
+
+    <style>
+
+        .body {
+            background-color: white;
+        }
+        .flex_container{
+            max-width: 350px;
+            border: 1px solid;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            background-color: orangered;
+            color: antiquewhite;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+            flex: 1;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+        
+        .align_container {
+            align-items: center;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .direction {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> FLEX DIRECTION ROW</h1>
+
+    <h2> Align auto</h2>
+    <section class="flex_container align_container">
+        <div class="item auto">AAAA</div>
+        <div class="item auto">Alexandre asdasda asdasdas asdasdad</div>
+        <div class="item auto">123456</div>
+        <div class="item auto">Hehe</div>
+    </section>
+
+    <h2> Align mix</h2>
+    <section class="flex_container">
+        <div class="item start">AAAA</div>
+        <div class="item center">Alexandre asdasda asdasdas asdasdad</div>
+        <div class="item center">123456</div>
+        <div class="item end">Hehe</div>
+    </section>
+
+    <h1> FLEX DIRECTION ROW</h1>
+
+    <h2> Align auto</h2>
+    <section class="flex_container align_container direction">
+        <div class="item auto">AAAA</div>
+        <div class="item auto">Alexandre asdasda asdasdas asdasdad</div>
+        <div class="item auto">123456</div>
+        <div class="item auto">Hehe</div>
+    </section>
+
+    <h2> Align mix</h2>
+    <section class="flex_container direction">
+        <div class="item start">AAAA</div>
+        <div class="item center">Alexandre asdasda asdasdas asdasdad</div>
+        <div class="item center">123456</div>
+        <div class="item end">Hehe</div>
+    </section>
+</body>
+</html>

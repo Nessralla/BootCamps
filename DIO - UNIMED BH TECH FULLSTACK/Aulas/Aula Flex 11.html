@@ -1,0 +1,74 @@
+<!-- Flex - Flex 
+
+    Esta propriedade é um atalho ou abreviação de escrita 
+    para as propriedades grow, shrink e basis-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fundamentos - Flex Flex</title>
+        <style>
+            .flex_container {
+                display: flex;
+                border: 1px solid black;
+                max-width: 400px;
+                background-color: beige;
+
+            }
+
+            .items {
+                background-color: brown;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .flex_1 {
+                flex: 1;
+                /* Grow=1, Shrink=1, Basis=0 */
+            }
+
+            .flex_2 {
+                flex: 2;
+                /* Grow=2, Shrink=1, Basis=0 */
+            }
+
+            .largura {
+                width: 200px;
+                min-width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <H3>Flex 1 - Grow=1, Shrink=1, Basis=0</H3>
+        <div class="flex_container">
+            <div class="items flex_1">A</div>
+            <div class="items flex_1">B</div>
+            <div class="items flex_1">C</div>
+            <div class="items flex_1">D</div>
+            <div class="items flex_1">E</div>
+        </div>
+
+        <H3>Flex mix</H3>
+        <div class="flex_container">
+            <div class="items flex_1">A</div>
+            <div class="items flex_2">BBB</div>
+            <div class="items flex_2">CCC</div>
+            <div class="items flex_1">D</div>
+            <div class="items flex_2">EEE</div>
+        </div>
+
+        <H3>min width -> basis = 0</H3>
+        <div class="flex_container">
+            <div class="items flex_1 largura">A</div>
+            <div class="items flex_1 largura">BBB</div>
+            <div class="items flex_1 largura">CCC</div>
+            <div class="items flex_1 largura">D</div>
+            <div class="items flex_1 largura">EEE</div>
+        </div>
+    </body>
+    </html>

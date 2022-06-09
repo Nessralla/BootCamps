@@ -4,3 +4,91 @@
 ou compressão do tamanho de um item
 
     -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fundamentos - flex shrink</title>
+        <style>
+            .flex_container {
+                display: flex;
+                border: 1px solid black;
+                max-width: 350px;
+                background-color: aliceblue;
+                margin: 10px;
+            }
+
+            .items {
+                margin: 5px;
+                background-color: orangered;
+                font-size: 24px;
+                text-align: center;
+            }
+            
+            .shrink_3 {
+                flex-shrink: 3;
+                flex-basis: 100px;
+            }
+
+            .shrink_2 {
+                flex-shrink: 2;
+                flex-basis: 100px;
+            }
+
+            .shrink_1 {
+                flex-shrink: 1;
+                flex-basis: 100px;
+            }
+
+            .shrink_0 {
+                flex-shrink: 0;
+                flex-basis: 100px;
+            }
+
+            .grow_1 {
+                flex-grow: 1;
+            }
+
+            
+
+
+        </style>
+    </head>
+    <body>
+        <h3> flex-shrink 1</h3>
+        <div class="flex_container">
+            <div class="items shrink_1 grow_1">A</div>
+            <div class="items shrink_1 grow_1">B</div>
+            <div class="items shrink_1 grow_1">C</div>
+            <div class="items shrink_1 grow_1">D</div>
+            <div class="items shrink_1 grow_1">E</div>
+        </div>
+
+        <div class="flex_container">
+            <div class="items shrink_1 grow_1">A</div>
+            <div class="items shrink_1 grow_1">B</div>
+            <div class="items shrink_1 grow_1">C</div>
+            <div class="items shrink_1 grow_1">D</div>
+        </div>
+
+        <h3> flex-shrink 0 / flex-basis 100px</h3>
+        <div class="flex_container">
+            <div class="items shrink_0 grow_1">A</div>
+            <div class="items shrink_0 grow_1">B</div>
+            <div class="items shrink_0 grow_1">C</div>
+            <div class="items shrink_0 grow_1">D</div>
+            <div class="items shrink_0 grow_1">E</div>
+        </div>
+
+        <h3> flex-shrink mix / flex-basis 100px</h3>
+        <div class="flex_container">
+            <div class="items shrink_0 grow_1">A</div>
+            <div class="items shrink_1 grow_1">B</div>
+            <div class="items shrink_2 grow_1">C</div>
+            <div class="items shrink_3 grow_1">D</div>
+        </div>
+    </body>
+    </html>
