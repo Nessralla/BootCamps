@@ -1,0 +1,84 @@
+<!-- Flex basis
+
+Estabelece o tamanho inicial dos itens, antes da distribuição de espaço restante dentro dele, usando como base o
+conteúdo interno disposto 
+    auto: proporcional ao conteúdo do item
+    0: terá relação com a definição do flex-grow
+    px,%,em: valores exatos previamente definidos
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos = flex basis</title>
+
+    <style> 
+
+        .flex_container {
+            max-width: 500px;
+            border: 1px solid black;
+            display: flex;
+            background-color: white;
+
+        }
+
+        .items {
+            background-color: coral;
+            color: white ;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .basis_auto {
+            flex-basis: auto;
+        }
+
+        .flex_grow_0 {
+            flex-grow: 0;
+        }
+        .flex_grow_1 {
+            flex-grow: 1;
+        }
+
+        .flex_grow_2 {
+            flex-grow: 2;
+        }
+
+        .basis_0 {
+            flex-basis: 0;
+        }
+
+        .w100 { 
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Basis auto </h2>
+    <div class="flex_container">
+        <div class="items basis_auto flex_grow_1">A</div>
+        <div class="items basis_auto flex_grow_1">BBB</div>
+        <div class="items basis_auto flex_grow_1">C</div>
+        <div class="items basis_auto flex_grow_1">DEF</div>
+    </div>
+
+    <h2>Basis 0 </h2>
+    <div class="flex_container">
+        <div class="items basis_0 flex_grow_1">AAAAAAAAAAA</div>
+        <div class="items basis_0 flex_grow_1">BBB</div>
+        <div class="items basis_0 flex_grow_1">C</div>
+        <div class="items basis_0 flex_grow_1">DEF</div>
+    </div>
+
+    <h2>Basis + width </h2>
+    <div class="flex_container">
+        <div class="items w100 flex_grow_1">A</div>
+        <div class="items w100 flex_grow_1">BBB</div>
+        <div class="items w100 flex_grow_1">CCC</div>
+        <div class="items w100 flex_grow_1">DEF</div>
+    </div>
+</body>
+</html>
