@@ -1,1 +1,2 @@
-Projetos, Exercícios e aulas do Bootcamp da DIO - UNIMED BH FULLSTACK
+Projetos, Exercícios e aulas dos Bootcamps feitos:
+  - DIO UNIMED BH TECH FULLSTACK
