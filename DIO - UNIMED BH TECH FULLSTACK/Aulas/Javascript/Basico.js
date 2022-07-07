@@ -129,7 +129,7 @@ IF TERNARIO
 
 [condicao] ? (statement if true) : (statemente if false)
 
-SWITCH CASE
+SWITCH CASE (equivale a uma comparaçao === tipo e valor)
 
 switch ($(expressao)) {
     case 1:
@@ -150,7 +150,7 @@ for (let i = 0; i < 5; i++) {
 
 FOR-in
 for (i in array) {
-    console.log(i) mostrar todos as propriedades da array um a um
+    console.log(i) mostrar todos as propriedades de um objeto um a um
 }
 
 for-of
@@ -158,18 +158,65 @@ for (i of array) {
     mostra os valores da array
 }
 
+while (condicao){
+    executa codigo
+}
+
+do {
+    executa;
+} while (condicao)
+
+THIS (refere-se ao objeto pai)
+declarada sozinha = objeto global (em navegadores, window)
+funcao = objeto global
+no evento html = elemento referido ex: button
+
+
+
+
+
 FUNCOES
 
+
+Declaração Padrão
 var funcoes = function(){
     console.log("deu certo");
 }
 
-funcoes();
+FUNÇÃO ANÔNIMA
+const soma = function (a,b) {
+    return a + b;
+}
+soma(1,2) resultado é 3
 
-arrow function
+
+FUNÇÃO autoinvocável (IIFE)
+(function(){
+    let name = 'hehehe';
+    return name;
+}
+)(); fica entre parênteses
+
+Callbacks = função passada como argumento para outra função.
+
+tem valor padrão de parâmetro, exemplo soma( a=1, b=1)
+
+Objeto arguments pode ser usado para fazer operações com todos os argumentos passados numa função
+
+Passar arrays como parâmetros: usar Spread, exemplo: console.log(soma(...numeros));
+
+Transformar elementos em uma array para parâmetro: usar rest function(...args);
+
+Object Destructing: filtrar dados num objeto. function userId{id}
+
+
+arrow function (não faz hoisting)
 var funcao = () => {
     console.log('Sou uma arrow function!');
 }
+    - metodos do THIS não funciona
+    - não exist objeto arguments
+    - o construtor new não pode ser utilizado
 
 funcao(0;)
 
