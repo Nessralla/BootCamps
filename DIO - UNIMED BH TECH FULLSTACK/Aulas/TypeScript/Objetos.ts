@@ -1,5 +1,6 @@
 export{};
 
+// Objeto definido por inferência
 const pessoa = {
     nome: 'Mariana',
     idade: 28,
@@ -8,6 +9,7 @@ const pessoa = {
 
 pessoa.idade = 30;
 
+// Objeto definido diretamente
 const Andre: {nome: string, idade: number, profissao: string} = {
     nome: 'Andre',
     idade: 25,
@@ -63,3 +65,4 @@ function lista(lista: string[]) {
 }
 
 lista(Monica.materias);
+
