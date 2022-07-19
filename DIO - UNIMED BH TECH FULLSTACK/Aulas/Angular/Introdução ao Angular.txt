@@ -1,0 +1,7 @@
+Introdução ao Angular 8
+
+course-manager é a paste que engloba todas as pastas do projeto
+
+no angular.json ficam os arquivos globais, de entrada para leitura da aplicação, qual arquivo inicializa (ain.ts)
+
+

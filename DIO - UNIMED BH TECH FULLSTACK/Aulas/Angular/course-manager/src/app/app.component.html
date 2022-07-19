@@ -1,0 +1,24 @@
+{{ title }} <!-- Ao lado temos a interpolação--> 
+
+<br>
+
+{{ name }}
+
+<br>
+
+<input [ngModel]="name" name="name"> <!-- Oneway databind, só exibe não atualiza o valor da propriedade do componente-->
+
+<br>
+
+<input [(ngModel)]="name" name="nome"> <!-- Twoway - A medida que for alterando o valor da propriedade, ele atualiza o valor em todos os lugares que esta usando o componente -->
+
+<br>
+<div class="container">
+  <app-course-list> <!-- Componente adicionado ao app.module.ts-->
+
+  </app-course-list>
+  
+</div>
+
+<br>
+

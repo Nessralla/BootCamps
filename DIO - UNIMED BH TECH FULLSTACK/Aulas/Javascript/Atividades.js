@@ -23,6 +23,13 @@ function menos(){
     }
 }
 
+/*
+    <h1>Contador</h1>
+    <button id="menos" onclick="menos()"> - </button>
+    <span id="cont" value=0>0</span>
+    <button id="mais" onclick="mais()"> + </button>
+*/
+
 // Crie uma TO-DO List
 
 

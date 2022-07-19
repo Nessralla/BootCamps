@@ -1,14 +1,17 @@
 
-let opcEntrada = document.querySelector('input[name="opc"]:checked');
+
 // let opcEntrada = document.getElementById('opc') as HTMLInputElement;
 let avancar = document.getElementById('button');
 
+
 if (avancar){
     avancar.addEventListener('click',() => {
+
+        var opcEntrada = document.querySelector<HTMLInputElement>('input[name="opc"]:checked')?.value;
+
+        
         if (opcEntrada) {
             console.log(opcEntrada);
         }
     })
 }
-
-// console.log(opcEntrada);
